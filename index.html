@@ -2,133 +2,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATIVIDADE 10    </title>
+    <title>Formulário adoção</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <form id="formAdocao">
+
+
+<div id="escudo">
+
+
+
+ <h2>Formulário de Adoção de Cães</h2>
+
  
-    <div id="body"></div>
-   
-    <div id="escudo">
-<h2>formulário de adoção</h2>
+        <label for="nome">Nome completo </label>
+        <input type="text" id="nome" placeholder="Ex: Arthur Beckhauser">
+ <br>
+  <br>
+        <label for="email">E-mail </label>
+        <input type="email" id="email" placeholder="Ex: Arthur@gmail.com">
+ <br>
+  <br>
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" placeholder="Ex: (47) 4002-8922">
+ <br>
+  <br>
+        <label for="cpf">CPF </label>
+        <input type="text" id="cpf" placeholder="Ex: 444.333.222-11">
+ <br>
+  <br>
+        <label for="idade">Idade </label>
+        <input type="number" id="idade" placeholder="">
+ <br>
+  <br>
+        <label for="cidade">Cidade </label>
+        <input type="text" id="cidade" placeholder="">
+ <br>
+  <br>
+        <label for="moradia">Tipo de moradia </label>
+        <select id="moradia">
+            <option value="">Selecione</option>
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+        </select>
+ <br>
+  <br>
+        <div id="campoPermiteAnimais" class="escondido">
+            <label for="permiteAnimais">O apartamento permite animais ? </label>
+            <select id="permiteAnimais">
+                <option value="">Selecione</option>
+                <option value="sim">sim</option>
+                <option value="nao">não</option>
+            </select>
+        </div>
+ <br>
+  <br>
+        <label>Possui quintal ? </label>
+        <div class="radio-grupo">
+            <label><input type="radio" name="quintal" value="sim"> sim</label>
+            <label><input type="radio" name="quintal" value="nao"> não</label>
+        </div>
+ <br>
+  <br>
+        <div id="campoQuintalSeguro" class="escondido">
+            <label>O quintal é seguro ? </label>
+            <div class="radio-grupo">
+                <label><input type="radio" name="quintalSeguro" value="sim"> sim</label>
+                <label><input type="radio" name="quintalSeguro" value="nao"> não</label>
+            </div>
+        </div>
+ <br>
+ <br>
+        <label>Já teve pet antes ? </label>
+        <div class="radio-grupo">
+            <label><input type="radio" name="tevePet" value="sim"> sim</label>
+            <label><input type="radio" name="tevePet" value="nao"> não</label>
+        </div>
+ <br>
+        <label for="horasSozinho">Quantas horas o animal ficará sozinho por dia ? </label>
+        <div>  <input type="number" id="horasSozinho" placeholder="Justifique" min="0" max="24"></div>
+    
+ <br>
+ <br>
+        <div id="campoJustificativa" class="escondido">
+            <label for="justificativa">O animal ficará mais de 8h sozinho ?</label>
 
-<form id="formAdocao">
+         <div><textarea id="justificativa" rows="3" placeholder="Justifique"></textarea></div>
 
-<label for="nome">Nome:</label>
-<input type="text" id="nome" placeholder="Ex: Arthur Beckhauser ">
-<br>
-<br>
+        </div>
+ <br>
+  <br>
+        <label for="motivo">Motivo da adoção </label>
 
-<label for="email">Email:</label>
-<input type="text" id="email" placeholder="Ex: matheus@gmail.com">
-<br>
-<br>
+        <div><textarea id="motivo" rows="4" placeholder="Justifique"></textarea></div>
+        
+ <br> 
+  <br>
+        <label for="condicaoFinanceira">Você tem condições adequadas para cuidar do animal? </label>
+        <select id="condicaoFinanceira">
+            <option value="">Selecione</option>
+            <option value="sim">sim</option>
+            <option value="nao">não tenho condições no momento</option>
+        </select>
+ <br>
+  <br>
+        <label for="decisao">Quando tomou a decisão de adotar ? </label>
+        <select id="decisao">
+            <option value="">Selecione</option>
+            <option value="hoje">Hoje </option>
+            <option value="dias">Há alguns dias</option>
+            <option value="semanas">Há semanas</option>
+        </select>
+ <br>
+  <br>
+        <div class="checkbox-grupo">
+            <input type="checkbox" id="termo">
+            <label for="termo">Aceito o termo de responsabilidade.</label>
+        </div>
+ 
+        <button type="submit">Enviar</button>
+ 
+    </form>
+ 
+    <div id="resultado"></div>
+ 
+    <script src="ongs.js"></script>
 
-<label for="cpf">CPF:</label>
-<input type="text" id="cpf" placeholder="EX: 152.292.419-18">
-<br>
-<br>
+    
+    <br>
+     <br>
 
-<label for="telefone">Telefone:</label>
-<input type="text" id="telefone" placeholder="Ex: (47) 999832422">
-<br>
-<br>
-
-<label for="estado">Estado:</label>
-<select name="estado" id="estado">
-<option value="">Selecione</option>
-<option value="casa">SC</option>
-<option value="apartamento">RJ</option>
-</select>
-<br>
-<br>
-
-<label for="cidade">Cidade:</label>
-<input type="text" id="cidade" placeholder="Ex: Parati">
-<br>
-<br>
-
-<label for="moradia">Moradia:</label>
-<select name="moradia" id="moradia">
-<option value="">Selecione</option>
-<option value="casa">Casa</option>
-<option value="apartamento">Apartamento</option>
-</select>
-<br>
-<br>
-
-<label for="quintal">Possui Quintal?</label>
-<br>
-<input type="radio" name="quintal" value="sim">sim
-<input type="radio" name="quintal" value="nao">Não
-<br>
-<br>
-
-<label for="quintal">Já teve Pet antes?</label>
-<br>
-<input type="radio" name="pet" value="sim">sim
-<input type="radio" name="pet" value="nao">Não
-<br>
-<br>
-
-<label for="quintal">Quantas horas o animal ficara sozinho?</label>
-<br>
-<input type="radio" name="horas" value="4">4 horas ou menos
-<input type="radio" name="horas" value="6">6 horas
-<input type="radio" name="horas" value="6">8 horas ou mais
-<br>
-<br>
-
-<label for="adc">Motivo da adoção?</label>
-<input type="text" id="adc" placeholder="Digite seu motivo:">
-<br>
-<br>
-
-<input type="checkbox" id="opcao1" name="opcao1" value="valor1">
-<label for="opcao1">Concordo com os termos.</label>
-<br>
-
-
-
-
-
-
-
-
-
-
-<button type="submit">Enviar</button>
-
-
-
-
-</form>
-<br>
 <div>
 
+<img src="Pastor-do-Cáucaso-origem.jpg" alt="imagem cachorro">
 
-  <img id="cavalier" src="21625336-cavalier-sênior-rei-charles-spaniel-preto-e-marrom-isolado-contra-fundo-cinza-retrato-de-estúdio.jpg" alt="Icon Jogador">
+
+</div>
+
 
 </div>
 
 
 
+<footer>
+
+Direitos reservador a ONG TPFCANT
+
+</footer>
 
 
-
-<div id="resultado"></div>
-<script src="ongs.js"></script>
-
-
-
-
-    </div>
-
-
-
-
-
-
-
+   
 </body>
 </html>
