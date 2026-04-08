@@ -1,11 +1,34 @@
 body{
 
+    color: rgb(248, 236, 233);
 
-background-image: url(images.jpg);
-background-size: cover;
+background-image: url(3567091-personagem-de-desenho-animado-cavalier-king-charles-spaniel-dog-seamless-pattern-background-vetor.jpg);
+background-size: contain;
 
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
 }
 
+#escudo{
 
+background-color: rgb(252, 214, 233);
+
+color: rgb(30, 30, 31);
+
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+
+
+margin: 0 auto;
+width: 600px;
+height: 1100px;
+padding: 100px;
+
+font-size: large;
+
+
+}
 

@@ -19,6 +19,9 @@ let horas = document.querySelector('input[name="horas"]:checked');
 
 let cpf = document.getElementById("cpf").value;
 
+let cidade = document.getElementById("cidade").value;
+
+let adc = document.getElementById("adc").value;
 
 let telefone = document.getElementById("telefone").value;
 if(telefone.length < 8) return alert("Numero Inválido");

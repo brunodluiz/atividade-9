@@ -6,25 +6,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<h2>formualrio de adoção</h2>
+ 
+    <div id="body"></div>
+   
+    <div id="escudo">
+<h2>formulário de adoção</h2>
 
 <form id="formAdocao">
 
 <label for="nome">Nome:</label>
-<input type="text" id="nome" placeholder="Digite seu nome">
+<input type="text" id="nome" placeholder="Ex: Arthur Beckhauser ">
+<br>
 <br>
 
 <label for="email">Email:</label>
-<input type="text" id="email" placeholder="Digite seu email:">
+<input type="text" id="email" placeholder="Ex: matheus@gmail.com">
+<br>
 <br>
 
-<label for="cpf">cpf</label>
-<input type="text" id="cpf" placeholder="Digite seu cpf:">
+<label for="cpf">CPF:</label>
+<input type="text" id="cpf" placeholder="EX: 152.292.419-18">
+<br>
 <br>
 
-<label for="telefone">telefone</label>
-<input type="text" id="telefone" placeholder="Digite seu Telefone:">
+<label for="telefone">Telefone:</label>
+<input type="text" id="telefone" placeholder="Ex: (47) 999832422">
+<br>
+<br>
+
+<label for="estado">Estado:</label>
+<select name="estado" id="estado">
+<option value="">Selecione</option>
+<option value="casa">SC</option>
+<option value="apartamento">RJ</option>
+</select>
+<br>
+<br>
+
+<label for="cidade">Cidade:</label>
+<input type="text" id="cidade" placeholder="Ex: Parati">
+<br>
 <br>
 
 <label for="moradia">Moradia:</label>
@@ -34,29 +55,38 @@
 <option value="apartamento">Apartamento</option>
 </select>
 <br>
+<br>
 
 <label for="quintal">Possui Quintal?</label>
+<br>
 <input type="radio" name="quintal" value="sim">sim
 <input type="radio" name="quintal" value="nao">Não
 <br>
+<br>
 
 <label for="quintal">Já teve Pet antes?</label>
+<br>
 <input type="radio" name="pet" value="sim">sim
 <input type="radio" name="pet" value="nao">Não
 <br>
+<br>
 
-<label for="quintal">Quantas horas o animal ficara sózinho?</label>
-<input type="radio" name="horas" value="4">4 horas
+<label for="quintal">Quantas horas o animal ficara sozinho?</label>
+<br>
+<input type="radio" name="horas" value="4">4 horas ou menos
 <input type="radio" name="horas" value="6">6 horas
 <input type="radio" name="horas" value="6">8 horas ou mais
 <br>
-
-
-
-<label for="nome">Motivo da adoção?</label>
-<input type="text" id="adc" placeholder="Digite seu motivo:">
 <br>
 
+<label for="adc">Motivo da adoção?</label>
+<input type="text" id="adc" placeholder="Digite seu motivo:">
+<br>
+<br>
+
+<input type="checkbox" id="opcao1" name="opcao1" value="valor1">
+<label for="opcao1">Concordo com os termos.</label>
+<br>
 
 
 
@@ -69,10 +99,31 @@
 
 <button type="submit">Enviar</button>
 
+
+
+
 </form>
+<br>
+<div>
+
+
+  <img id="cavalier" src="21625336-cavalier-sênior-rei-charles-spaniel-preto-e-marrom-isolado-contra-fundo-cinza-retrato-de-estúdio.jpg" alt="Icon Jogador">
+
+</div>
+
+
+
+
+
 
 <div id="resultado"></div>
 <script src="ongs.js"></script>
+
+
+
+
+    </div>
+
 
 
 
